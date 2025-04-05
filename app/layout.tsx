@@ -13,8 +13,12 @@ const IBMPlex = IBM_Plex_Sans({
 })
 
 export const metadata: Metadata = {
-	title: "ProgAI",
-	description: "AI-powered image generator"
+	title: {
+		default: "ProgAI",
+		template: `%s | ProgAI`
+	},
+	description: "AI-powered image generator",
+	icons: ["/assets/images/logo-icon.svg"]
 }
 export default function RootLayout({
 	children

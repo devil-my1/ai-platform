@@ -340,7 +340,7 @@
 	}
 
 	.header-nav_elements {
-		@apply mt-8 flex w-full flex-col items-start gap-5;
+		@apply mt-8 flex w-full flex-col items-start gap-2;
 	}
 
 	/* Search Component */
@@ -402,15 +402,15 @@
 
 /* ==== clerk class override ===== */
 .cl-userButtonBox {
-	display: flex;
-	flex-flow: row-reverse;
-	gap: 12px;
+	@apply flex items-center gap-3 flex-row-reverse;
+}
+
+.cl-socialButtonsIconButton {
+	@apply bg-dark-700 hover:bg-slate-500 transition-colors duration-300 !important;
 }
 
 .cl-userButtonOuterIdentifier {
-	font-size: 16px;
-	font-weight: 600;
-	color: #384262;
+	@apply text-sm font-semibold text-dark-400;
 }
 
 .cl-providerIcon__github {
@@ -419,8 +419,28 @@
 
 .cl-internal-1dauvpw,
 .cl-internal-1hp5nqm {
-	display: none;
+	@apply hidden;
 }
+
+.cl-userButtonTrigger {
+	@apply focus:shadow-none !important;
+}
+
+.cl-formFieldInputShowPasswordIcon,
+.cl-footerActionLink {
+	@apply text-white/50 hover:text-white/100 transition-colors duration-300 !important;
+}
+
+.cl-userButtonPopoverActionButton,
+.cl-navbarButtonText,
+.cl-navbarButtonIcon {
+	@apply text-white hover:text-white/70 transition-colors duration-300 !important;
+}
+
+.cl-badge {
+	@apply bg-purple-200 text-purple-500;
+}
+
 /* ======== DatePicker css overrides ======== */
 
 .react-datepicker-popper-custom {
