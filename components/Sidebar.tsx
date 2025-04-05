@@ -99,12 +99,14 @@ const Sidebar = () => {
 					</SignedIn>
 
 					<SignedOut>
-						<Button
-							asChild
-							className='button bg-purple-gradient bg-cover'
-						>
-							<Link href='/sign-in'>Sign In</Link>
-						</Button>
+						<div className='flex flex-col gap-4'>
+							<Button className='default-button'>
+								<Link href='/sign-in'>Sign In</Link>
+							</Button>
+							<Button className='default-button'>
+								<Link href='/sign-up'>Sign Up</Link>
+							</Button>
+						</div>
 					</SignedOut>
 				</nav>
 			</div>
