@@ -24,7 +24,6 @@ declare interface IUser extends Document {
 	lastName: string
 	avatar?: string
 	email: string
-	password: string
 	creditBalance: number
 }
 
